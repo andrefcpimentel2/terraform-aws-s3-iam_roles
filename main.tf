@@ -33,7 +33,7 @@ resource "aws_s3_bucket" "s3_iam" {
 
   tags = {
     Name       = "${var.namespace}-s3-iam"
-    created-by = Terraform
+    created-by = "Terraform"
   }
 
 }
