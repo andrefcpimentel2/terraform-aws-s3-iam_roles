@@ -8,6 +8,11 @@ variable "namespace" {
   default = "andredemo-iam"
 }
 
+variable "role_arn" {
+  description = "Role ARM to impersonate"
+
+}
+
 provider "aws" {
   region = var.aws_region
   assume_role { 
